@@ -1,7 +1,42 @@
 header {
     background-image: url("../components/images/hero-image.jpg");
 
-    nav  a {
-        color: white;
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+
+        .hercules-logo {
+            margin: 47px 0 0 83px;
+        }
+
+        nav {
+            margin-top: 47px;
+
+            a {
+                // color: white;
+                text-decoration: none;
+                padding-right: 60px;
+            }
+            a:last-of-type {
+                margin-right: 75px;
+            }
+        }
     }
+
+    .intro-tagline {
+        margin-left: 110px;
+        margin-top: 170px;
+        line-height: 50%;
+        h1 {
+            letter-spacing: 4px;
+            
+        }
+        h3 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            // padding-bottom: 40px;
+        }
+    }
+    
+    
 }
