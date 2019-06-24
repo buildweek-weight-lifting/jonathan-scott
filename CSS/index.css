@@ -1,0 +1,10 @@
+header {
+  background-image: url("../components/images/hero-image.jpg");
+}
+header nav a {
+  color: white;
+}
+.middle-images {
+  display: flex;
+  justify-content: space-around;
+}
