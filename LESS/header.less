@@ -1,41 +1,82 @@
 header {
-    background-image: url("../components/images/hero-image.jpg");
+    max-width: 98vw;
+    background-image: url(../components/images/hero-image.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
 
     .nav-container {
         display: flex;
         justify-content: space-between;
 
         .hercules-logo {
-            margin: 47px 0 0 83px;
+            margin: 48px 0 0 85px;
         }
 
         nav {
-            margin-top: 47px;
+            margin-top: 50px;
 
             a {
-                // color: white;
                 text-decoration: none;
                 padding-right: 60px;
             }
             a:last-of-type {
-                margin-right: 75px;
+                padding-right: 35px;
             }
         }
     }
 
     .intro-tagline {
-        margin-left: 110px;
-        margin-top: 170px;
-        line-height: 50%;
+        margin-bottom: 100px;
         h1 {
-            letter-spacing: 4px;
+            margin-left: 117px;
+            margin-top: 190px;
+            margin-bottom: 20px;
+            font-weight: 900;
             
         }
         h3 {
+            margin-left: 117px;
             font-size: 2.5rem;
             font-weight: normal;
-            // padding-bottom: 40px;
         }
+        .btn {
+            .button-style();
+        }
+    }
+    
+    .info-boxes {
+        height: 193px;
+        display: flex;
+        // flex-wrap: wrap;
+        .chevron-img {
+            padding: 70px 50px 50px 50px;
+            width: 35%;
+            text-align: center;
+
+        }
+
+        .small-quote {
+            background: white;
+            padding: 70px 50px 50px 50px;
+            width: 25%;
+        }
+
+        .workout-tracking {
+            background-image: url(../components/images/sub-hero-image.jpg);
+            padding: 70px 50px 50px 50px;
+            width: 25%;
+            color: white;
+
+        }
+
+        .meet-us {
+            text-align: center;
+            padding: 80px 50px 40px 50px;
+            background: white;
+            width: 14%;
+        }
+
+
     }
     
     
