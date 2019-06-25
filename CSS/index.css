@@ -1,9 +1,17 @@
 .button-style {
-  background: #FFec42;
+  background: #FFEC42;
   padding: 18px 75px;
   margin-top: 40px;
   margin-left: 50px;
   border: none;
+}
+.about-button-style {
+  background: #3D3D3D;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 210px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -149,6 +157,9 @@ body {
 .container {
   width: auto;
 }
+.about-container {
+  background: #202020;
+}
 h1,
 h3,
 h5,
@@ -175,78 +186,123 @@ a {
 p {
   font-size: 1.5rem;
 }
-header {
+.index-header {
   max-width: 98vw;
   background-image: url(../components/images/hero-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-header .nav-container {
+.index-header .nav-container {
   display: flex;
   justify-content: space-between;
 }
-header .nav-container .hercules-logo {
+.index-header .nav-container .hercules-logo {
   margin: 48px 0 0 85px;
 }
-header .nav-container nav {
+.index-header .nav-container nav {
   margin-top: 50px;
 }
-header .nav-container nav a {
+.index-header .nav-container nav a {
   text-decoration: none;
   padding-right: 60px;
 }
-header .nav-container nav a:last-of-type {
+.index-header .nav-container nav a:last-of-type {
   padding-right: 35px;
 }
-header .intro-tagline {
+.index-header .intro-tagline {
   margin-bottom: 100px;
 }
-header .intro-tagline h1 {
+.index-header .intro-tagline h1 {
   margin-left: 117px;
   margin-top: 190px;
   margin-bottom: 20px;
   font-weight: 900;
 }
-header .intro-tagline h3 {
+.index-header .intro-tagline h3 {
   margin-left: 117px;
   font-size: 2.5rem;
   font-weight: normal;
 }
-header .intro-tagline .btn {
-  background: #FFec42;
+.index-header .intro-tagline .btn {
+  background: #FFEC42;
   padding: 18px 75px;
   margin-top: 40px;
   margin-left: 50px;
   border: none;
 }
-header .info-boxes {
+.index-header .info-boxes {
   height: 193px;
   display: flex;
 }
-header .info-boxes .chevron-img {
+.index-header .info-boxes .chevron-img {
   padding: 70px 50px 50px 50px;
   width: 40%;
   text-align: center;
 }
-header .info-boxes .small-quote {
+.index-header .info-boxes .small-quote {
   background: white;
   padding: 70px 50px 50px 50px;
   width: 24%;
 }
-header .info-boxes .workout-tracking {
+.index-header .info-boxes .workout-tracking {
   background-image: url(../components/images/sub-hero-image.jpg);
   padding: 70px 50px 50px 50px;
   width: 24%;
   color: white;
 }
-header .info-boxes .meet-us {
+.index-header .info-boxes .meet-us {
   text-align: center;
   padding: 80px 50px 40px 50px;
   background: white;
   width: 11%;
 }
-header .info-boxes .meet-us a {
+.index-header .info-boxes .meet-us a {
   color: black;
+}
+.about-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.about-nav .hercules-logo {
+  margin: 48px 0 0 85px;
+}
+.about-nav nav {
+  margin-top: 50px;
+}
+.about-nav nav a {
+  text-decoration: none;
+  padding-right: 60px;
+}
+.about-nav nav a:last-of-type {
+  padding-right: 35px;
+}
+.about-blurb {
+  margin-top: 3%;
+  text-align: center;
+  color: white;
+}
+.team-members {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% auto;
+}
+.team-members .team-member {
+  padding-bottom: 2%;
+}
+.button-bar {
+  display: flex;
+  justify-content: center;
+}
+.button-bar .about-btn {
+  background: #3D3D3D;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 210px;
 }
 .middle-section {
   margin: 60px 0 55px 0;
@@ -285,6 +341,7 @@ header .info-boxes .meet-us a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 35%;
   margin-left: 33%;
 }
@@ -292,7 +349,7 @@ header .info-boxes .meet-us a {
   color: white;
 }
 .bottom-section .call-to-action .btn {
-  background: #FFec42;
+  background: #FFEC42;
   padding: 18px 75px;
   margin-top: 40px;
   margin-left: 50px;
