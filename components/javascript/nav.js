@@ -1,0 +1,1 @@
+const navAnchors = document.querySelectorAll('nav a');
