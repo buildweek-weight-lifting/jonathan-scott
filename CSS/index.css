@@ -1,0 +1,379 @@
+.button-style {
+  background: #FFEC42;
+  padding: 18px 75px;
+  margin-top: 40px;
+  margin-left: 50px;
+  border: none;
+}
+.about-button-style {
+  background: #3D3D3D;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 210px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+  max-height: 100%;
+  max-width: 98vw;
+}
+.container {
+  width: auto;
+}
+.about-container {
+  background: #202020;
+}
+h1,
+h3,
+h5,
+a {
+  color: white;
+}
+h1 {
+  font-size: 7rem;
+  font-family: 'Oswald', sans-serif;
+}
+h2 {
+  font-size: 3.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+}
+h4 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.5rem;
+}
+.index-header {
+  max-width: 98vw;
+  background-image: url(../components/images/Borders.svg), url(../components/images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index-header .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.index-header .nav-container .hercules-logo {
+  margin: 48px 0 0 85px;
+}
+.index-header .nav-container nav {
+  margin-top: 50px;
+}
+.index-header .nav-container nav a {
+  text-decoration: none;
+  padding-right: 60px;
+}
+.index-header .nav-container nav a:last-of-type {
+  padding-right: 35px;
+}
+.index-header .intro-tagline {
+  margin-bottom: 100px;
+}
+.index-header .intro-tagline h1 {
+  margin-left: 117px;
+  margin-top: 190px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.index-header .intro-tagline h3 {
+  margin-left: 117px;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.index-header .intro-tagline .btn {
+  background: #FFEC42;
+  padding: 18px 75px;
+  margin-top: 40px;
+  margin-left: 50px;
+  border: none;
+}
+.index-header .info-boxes {
+  height: 193px;
+  display: flex;
+}
+.index-header .info-boxes .chevron-img {
+  padding: 70px 50px 50px 50px;
+  width: 40%;
+  text-align: center;
+}
+.index-header .info-boxes .small-quote {
+  background: white;
+  padding: 70px 50px 50px 50px;
+  width: 24%;
+}
+.index-header .info-boxes .workout-tracking {
+  background-image: url(../components/images/sub-hero-image.jpg);
+  padding: 70px 50px 50px 50px;
+  width: 24%;
+  color: white;
+}
+.index-header .info-boxes .meet-us {
+  text-align: center;
+  padding: 80px 50px 40px 50px;
+  background: white;
+  width: 11%;
+}
+.index-header .info-boxes .meet-us a {
+  color: black;
+}
+.about-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.about-nav .hercules-logo {
+  margin: 48px 0 0 85px;
+}
+.about-nav nav {
+  margin-top: 50px;
+}
+.about-nav nav a {
+  text-decoration: none;
+  padding-right: 60px;
+}
+.about-nav nav a:last-of-type {
+  padding-right: 35px;
+}
+.about-blurb {
+  margin-top: 3%;
+  text-align: center;
+  color: white;
+}
+.team-members {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% auto;
+}
+.team-members .team-member {
+  padding-bottom: 2%;
+}
+.button-bar {
+  display: flex;
+  justify-content: center;
+}
+.button-bar .about-btn {
+  background: #3D3D3D;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 210px;
+}
+.middle-section {
+  margin: 60px 0 55px 0;
+}
+.middle-section .big-quote {
+  text-align: center;
+}
+.middle-section .big-quote p {
+  margin-top: 5px;
+  font-size: 2rem;
+}
+.middle-section .middle-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.middle-section .middle-images img {
+  padding-left: 40px;
+}
+.bottom-section {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  display: flex;
+  background: url('/components/images/Rectangle-Image.jpg');
+  background-repeat: no-repeat;
+  height: 446px;
+  background-size: 98vw;
+}
+.bottom-section .left-phone {
+  position: absolute;
+  margin-top: -125px;
+}
+.bottom-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  margin-left: 33%;
+}
+.bottom-section .call-to-action h2 {
+  color: white;
+}
+.bottom-section .call-to-action .btn {
+  background: #FFEC42;
+  padding: 18px 75px;
+  margin-top: 40px;
+  margin-left: 50px;
+  border: none;
+}
+.bottom-section .right-phone {
+  position: absolute;
+  margin-left: 65vw;
+  margin-top: -125px;
+}
+footer {
+  margin-top: 10%;
+  padding-top: 85px;
+  text-align: center;
+  background: #202020;
+  height: 150px;
+}
+footer .footer-nav {
+  margin-bottom: 3%;
+}
+footer .footer-nav a {
+  font-size: 1.4rem;
+  padding: 0 5px;
+}
+footer h5 {
+  font-size: 1.4rem;
+}
