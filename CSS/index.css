@@ -160,12 +160,13 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: 'Oswald', sans-serif;
   font-weight: bolder;
 }
 h4 {
   font-size: 1.7rem;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -224,53 +225,68 @@ header .info-boxes {
 }
 header .info-boxes .chevron-img {
   padding: 70px 50px 50px 50px;
-  width: 35%;
+  width: 40%;
   text-align: center;
 }
 header .info-boxes .small-quote {
   background: white;
   padding: 70px 50px 50px 50px;
-  width: 25%;
+  width: 24%;
 }
 header .info-boxes .workout-tracking {
   background-image: url(../components/images/sub-hero-image.jpg);
   padding: 70px 50px 50px 50px;
-  width: 25%;
+  width: 24%;
   color: white;
 }
 header .info-boxes .meet-us {
   text-align: center;
   padding: 80px 50px 40px 50px;
   background: white;
-  width: 14%;
+  width: 11%;
+}
+header .info-boxes .meet-us a {
+  color: black;
 }
 .middle-section {
-  margin-top: 40px;
+  margin: 60px 0 55px 0;
 }
 .middle-section .big-quote {
   text-align: center;
+}
+.middle-section .big-quote p {
+  margin-top: 5px;
+  font-size: 2rem;
 }
 .middle-section .middle-images {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .middle-section .middle-images img {
   padding-left: 40px;
 }
 .bottom-section {
-  max-width: 98vw;
+  margin-top: 120px;
+  margin-bottom: 50px;
   display: flex;
   background: url('/components/images/Rectangle-Image.jpg');
   background-repeat: no-repeat;
+  height: 446px;
   background-size: 98vw;
 }
+.bottom-section .left-phone {
+  position: absolute;
+  margin-top: -125px;
+}
 .bottom-section .call-to-action {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 35%;
+  margin-left: 33%;
 }
 .bottom-section .call-to-action h2 {
   color: white;
@@ -282,12 +298,17 @@ header .info-boxes .meet-us {
   margin-left: 50px;
   border: none;
 }
+.bottom-section .right-phone {
+  position: absolute;
+  margin-left: 65vw;
+  margin-top: -125px;
+}
 footer {
   margin-top: 10%;
   padding-top: 85px;
   text-align: center;
   background: #202020;
-  height: 200px;
+  height: 150px;
 }
 footer .footer-nav {
   margin-bottom: 3%;

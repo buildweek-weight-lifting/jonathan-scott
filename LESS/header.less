@@ -47,24 +47,23 @@ header {
     .info-boxes {
         height: 193px;
         display: flex;
-        // flex-wrap: wrap;
         .chevron-img {
-            padding: 70px 50px 50px 50px;
-            width: 35%;
+            padding: @info-padding;
+            width: 40%;
             text-align: center;
 
         }
 
         .small-quote {
             background: white;
-            padding: 70px 50px 50px 50px;
-            width: 25%;
+            padding: @info-padding;
+            width: 24%;
         }
 
         .workout-tracking {
             background-image: url(../components/images/sub-hero-image.jpg);
-            padding: 70px 50px 50px 50px;
-            width: 25%;
+            padding: @info-padding;
+            width: 24%;
             color: white;
 
         }
@@ -73,7 +72,11 @@ header {
             text-align: center;
             padding: 80px 50px 40px 50px;
             background: white;
-            width: 14%;
+            width: 11%;
+
+            a {
+                color: black;
+            }
         }
 
 

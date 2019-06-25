@@ -1,21 +1,38 @@
 .bottom-section {
-    max-width: 98vw;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    // max-width: 98vw;
     display: flex;
     background: url('/components/images/Rectangle-Image.jpg');
     background-repeat:  no-repeat;
+    height: 446px;
     background-size: 98vw;
+    // text-align: center;
 
+    .left-phone {
+        position: absolute;
+        margin-top: -125px;
+    }
     .call-to-action {
-        text-align: center;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        width: 35%;
+        margin-left: 33%;
         h2 {
             color: white;
         }
         .btn {
             .button-style();
+            // width: 5%;
         }
+    }
+    .right-phone {
+        position: absolute;
+        margin-left: 65vw;
+        margin-top: -125px;
     }
     
 }
