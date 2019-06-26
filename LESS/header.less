@@ -17,20 +17,22 @@
         display: flex;
         justify-content: space-between;
 
-        .menu {
+        .menu-icon {
             display: none;
             margin: 2%;
 
             @media @mobile {
+                order: 0;
                 display: flex;
                 flex-direction: column;
                 margin: 5px, 0 0 5px;
+                z-index: 1;
             }
 
             .menu-bar {
                 width: 30px;
                 height: 5px;
-                background-color:white;
+                background:white;
                 margin: 4px 0;
               }
           }
@@ -44,13 +46,37 @@
         }
         .hercules-gold-logo {
             display: none;
-            
+
             @media @mobile {
-                display: inline;
-                margin: 2% 0 0 75%;
+                display: flex;
+                margin-right: 2%;
+                order: 2;
+                z-index: 1;
             }
         }
 
+        .mobile-menu {
+            display: none;
+
+            @media @mobile {
+                padding-top: 15px;
+                background-color: @medium-grey;
+                border-bottom: 1px solid @yellow;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                order: 1;
+            }
+
+            a {
+                @media @mobile {
+                    text-align: center;
+                    font-size: 2.5rem;
+                    padding-bottom: 5%;
+                    color: @yellow;
+                }
+            }
+        }
         nav {
             margin-top: 50px;
 
@@ -63,6 +89,23 @@
             a:last-of-type {
                 padding-right: 35px;
             }
+        }
+        .display-menu {
+            transition: all 0.5s ease;
+            height: 190px;
+            width: 100%;
+            
+        }
+        .hide-menu {
+            transition: all 0.3s ease;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+
+            a {
+                display: none;
+            }
+            
         }
     }  
 

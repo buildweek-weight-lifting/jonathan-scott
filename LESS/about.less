@@ -4,6 +4,12 @@
     line-height: 35px;
     text-align: center;
     color: white;
+
+    @media @mobile {
+        margin-left: 3%;
+        margin-top: 15%;
+        width: 90vw;
+    }
 }
 .team-members {
     width: 60%;
@@ -19,8 +25,9 @@
         
     }
 
-    @media @tablet {
-        width: 98vw;
+    @media @mobile {
+
+        width: 95vw;
     }
 
     .team-member {
@@ -48,5 +55,10 @@
 
     .about-btn {
         .about-button-style();
+    }
+
+    .active-btn {
+        background: @yellow;
+        color: black;
     }
 }
