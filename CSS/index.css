@@ -215,18 +215,20 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.index-header .nav-container .menu {
+.index-header .nav-container .menu-icon {
   display: none;
   margin: 2%;
 }
 @media (max-width: 500px) {
-  .index-header .nav-container .menu {
+  .index-header .nav-container .menu-icon {
+    order: 0;
     display: flex;
     flex-direction: column;
     margin: 5px, 0 0 5px;
+    z-index: 1;
   }
 }
-.index-header .nav-container .menu .menu-bar {
+.index-header .nav-container .menu-icon .menu-bar {
   width: 30px;
   height: 5px;
   background-color: white;
@@ -245,8 +247,34 @@ p {
 }
 @media (max-width: 500px) {
   .index-header .nav-container .hercules-gold-logo {
-    display: inline;
-    margin: 2% 0 0 75%;
+    display: flex;
+    order: 2;
+    z-index: 1;
+  }
+}
+.index-header .nav-container .mobile-menu {
+  display: none;
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .mobile-menu {
+    background-color: #202020;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .mobile-menu a {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 3%;
+    color: #FFEC42;
+  }
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .mobile-menu a a:first-child {
+    margin-top: 5px;
   }
 }
 .index-header .nav-container nav {
@@ -263,6 +291,20 @@ p {
 }
 .index-header .nav-container nav a:last-of-type {
   padding-right: 35px;
+}
+.index-header .nav-container .display-menu {
+  transition: all 0.5s ease;
+  height: 180px;
+  width: 100%;
+}
+.index-header .nav-container .hide-menu {
+  transition: all 0.2s ease;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.index-header .nav-container .hide-menu a {
+  display: none;
 }
 .index-header .intro-tagline {
   margin-bottom: 100px;
@@ -371,18 +413,20 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.about-nav .menu {
+.about-nav .menu-icon {
   display: none;
   margin: 2%;
 }
 @media (max-width: 500px) {
-  .about-nav .menu {
+  .about-nav .menu-icon {
+    order: 0;
     display: flex;
     flex-direction: column;
     margin: 5px, 0 0 5px;
+    z-index: 1;
   }
 }
-.about-nav .menu .menu-bar {
+.about-nav .menu-icon .menu-bar {
   width: 30px;
   height: 5px;
   background-color: white;
@@ -401,8 +445,34 @@ p {
 }
 @media (max-width: 500px) {
   .about-nav .hercules-gold-logo {
-    display: inline;
-    margin: 2% 0 0 75%;
+    display: flex;
+    order: 2;
+    z-index: 1;
+  }
+}
+.about-nav .mobile-menu {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-nav .mobile-menu {
+    background-color: #202020;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+}
+@media (max-width: 500px) {
+  .about-nav .mobile-menu a {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 3%;
+    color: #FFEC42;
+  }
+}
+@media (max-width: 500px) {
+  .about-nav .mobile-menu a a:first-child {
+    margin-top: 5px;
   }
 }
 .about-nav nav {
@@ -420,12 +490,32 @@ p {
 .about-nav nav a:last-of-type {
   padding-right: 35px;
 }
+.about-nav .display-menu {
+  transition: all 0.5s ease;
+  height: 180px;
+  width: 100%;
+}
+.about-nav .hide-menu {
+  transition: all 0.2s ease;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.about-nav .hide-menu a {
+  display: none;
+}
 .about-blurb {
   margin-top: 5%;
   margin-bottom: 3%;
   line-height: 35px;
   text-align: center;
   color: white;
+}
+@media (max-width: 500px) {
+  .about-blurb {
+    margin-left: 3%;
+    width: 90vw;
+  }
 }
 .team-members {
   width: 60%;
@@ -441,9 +531,9 @@ p {
     justify-content: center;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .team-members {
-    width: 98vw;
+    width: 95vw;
   }
 }
 .team-members .team-member {

@@ -2,14 +2,16 @@
     display: flex;
     justify-content: space-between;
 
-    .menu {
+    .menu-icon {
         display: none;
         margin: 2%;
 
         @media @mobile {
+            order: 0;
             display: flex;
             flex-direction: column;
             margin: 5px, 0 0 5px;
+            z-index: 1;
         }
 
         .menu-bar {
@@ -29,13 +31,39 @@
     }
     .hercules-gold-logo {
         display: none;
-        
+
         @media @mobile {
-            display: inline;
-            margin: 2% 0 0 75%;
+            display: flex;
+            order: 2;
+            z-index: 1;
         }
     }
 
+    .mobile-menu {
+        display: none;
+
+        @media @mobile {
+            background-color: @dark-grey;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            order: 1;
+        }
+
+        a {
+            @media @mobile {
+                text-align: center;
+                font-size: 2.5rem;
+                padding-bottom: 3%;
+                color: @yellow;
+            }
+        a:first-child {
+            @media @mobile {
+                margin-top: 5px;
+            }
+        }
+        }
+    }
     nav {
         margin-top: 50px;
 
@@ -43,10 +71,27 @@
             text-decoration: none;
             padding-right: 60px;
 
-            .hiddenMobile()
+            .hiddenMobile();
         }
         a:last-of-type {
             padding-right: 35px;
         }
+    }
+    .display-menu {
+        transition: all 0.5s ease;
+        height: 180px;
+        width: 100%;
+        
+    }
+    .hide-menu {
+        transition: all 0.2s ease;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+
+        a {
+            display: none;
+        }
+        
     }
 }
