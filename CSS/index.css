@@ -1,9 +1,14 @@
 .button-style {
   background: #FFEC42;
-  padding: 18px 75px;
+  padding: 18px 76px;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 47px;
   border: none;
+}
+@media (max-width: 500px) {
+  .button-style {
+    width: 50vw;
+  }
 }
 .about-button-style {
   background: #3D3D3D;
@@ -11,7 +16,12 @@
   border: none;
   padding: 10px;
   margin: 10px;
-  width: 210px;
+  width: 200px;
+}
+@media (max-width: 500px) {
+  .hiddenMobile {
+    display: none;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -155,7 +165,8 @@ body {
   max-width: 98vw;
 }
 .container {
-  width: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 .about-container {
   background: #202020;
@@ -189,15 +200,54 @@ p {
 .index-header {
   max-width: 98vw;
   background-image: url(../components/images/Borders.svg), url(../components/images/hero-image.jpg);
+  background-position-x: 45px, 
+        0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 500px) {
+  .index-header {
+    background-image: url(../components/images/hero-image.jpg);
+    background-position-x: -419px;
+  }
 }
 .index-header .nav-container {
   display: flex;
   justify-content: space-between;
 }
+.index-header .nav-container .menu {
+  display: none;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 5px, 0 0 5px;
+  }
+}
+.index-header .nav-container .menu .menu-bar {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0;
+}
 .index-header .nav-container .hercules-logo {
   margin: 48px 0 0 85px;
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .hercules-logo {
+    display: none;
+  }
+}
+.index-header .nav-container .hercules-gold-logo {
+  display: none;
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .hercules-gold-logo {
+    display: inline;
+    margin: 2% 0 0 75%;
+  }
 }
 .index-header .nav-container nav {
   margin-top: 50px;
@@ -206,29 +256,66 @@ p {
   text-decoration: none;
   padding-right: 60px;
 }
+@media (max-width: 500px) {
+  .index-header .nav-container nav a {
+    display: none;
+  }
+}
 .index-header .nav-container nav a:last-of-type {
   padding-right: 35px;
 }
 .index-header .intro-tagline {
   margin-bottom: 100px;
 }
+@media (max-width: 500px) {
+  .index-header .intro-tagline {
+    text-align: center;
+    margin-left: 15vw;
+    width: 70vw;
+  }
+}
 .index-header .intro-tagline h1 {
-  margin-left: 117px;
-  margin-top: 190px;
-  margin-bottom: 20px;
+  margin-left: 110px;
+  margin-top: 186px;
+  margin-bottom: 10px;
   font-weight: 900;
 }
+@media (max-width: 500px) {
+  .index-header .intro-tagline h1 {
+    margin-left: 0;
+  }
+}
 .index-header .intro-tagline h3 {
-  margin-left: 117px;
+  margin-left: 110px;
   font-size: 2.5rem;
   font-weight: normal;
 }
+@media (max-width: 500px) {
+  .index-header .intro-tagline h3 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+}
 .index-header .intro-tagline .btn {
   background: #FFEC42;
-  padding: 18px 75px;
+  padding: 18px 76px;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 47px;
   border: none;
+}
+@media (max-width: 500px) {
+  .index-header .intro-tagline .btn {
+    width: 50vw;
+  }
+}
+.index-header .intro-tagline .btn img {
+  background-position-y: 2px;
+  padding-top: 1px;
+}
+@media (max-width: 500px) {
+  .index-header .intro-tagline .btn {
+    margin-left: 0;
+  }
 }
 .index-header .info-boxes {
   height: 193px;
@@ -238,11 +325,22 @@ p {
   padding: 70px 50px 50px 50px;
   width: 40%;
   text-align: center;
+  margin-left: 2.5%;
+}
+@media (max-width: 500px) {
+  .index-header .info-boxes .chevron-img {
+    margin-left: 20%;
+  }
 }
 .index-header .info-boxes .small-quote {
   background: white;
   padding: 70px 50px 50px 50px;
   width: 24%;
+}
+@media (max-width: 500px) {
+  .index-header .info-boxes .small-quote {
+    display: none;
+  }
 }
 .index-header .info-boxes .workout-tracking {
   background-image: url(../components/images/sub-hero-image.jpg);
@@ -250,11 +348,21 @@ p {
   width: 24%;
   color: white;
 }
+@media (max-width: 500px) {
+  .index-header .info-boxes .workout-tracking {
+    display: none;
+  }
+}
 .index-header .info-boxes .meet-us {
   text-align: center;
   padding: 80px 50px 40px 50px;
   background: white;
   width: 11%;
+}
+@media (max-width: 500px) {
+  .index-header .info-boxes .meet-us {
+    display: none;
+  }
 }
 .index-header .info-boxes .meet-us a {
   color: black;
@@ -263,8 +371,39 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.about-nav .menu {
+  display: none;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .about-nav .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 5px, 0 0 5px;
+  }
+}
+.about-nav .menu .menu-bar {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0;
+}
 .about-nav .hercules-logo {
   margin: 48px 0 0 85px;
+}
+@media (max-width: 500px) {
+  .about-nav .hercules-logo {
+    display: none;
+  }
+}
+.about-nav .hercules-gold-logo {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-nav .hercules-gold-logo {
+    display: inline;
+    margin: 2% 0 0 75%;
+  }
 }
 .about-nav nav {
   margin-top: 50px;
@@ -273,11 +412,18 @@ p {
   text-decoration: none;
   padding-right: 60px;
 }
+@media (max-width: 500px) {
+  .about-nav nav a {
+    display: none;
+  }
+}
 .about-nav nav a:last-of-type {
   padding-right: 35px;
 }
 .about-blurb {
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  line-height: 35px;
   text-align: center;
   color: white;
 }
@@ -289,12 +435,38 @@ p {
   align-items: center;
   margin: 2% auto;
 }
+@media (max-width: 800px) {
+  .team-members {
+    width: 80vw;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .team-members {
+    width: 98vw;
+  }
+}
 .team-members .team-member {
   padding-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .team-members .team-member {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .team-members .team-member img {
+    width: 40vw;
+  }
 }
 .button-bar {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 800px) {
+  .button-bar {
+    flex-wrap: wrap;
+  }
 }
 .button-bar .about-btn {
   background: #3D3D3D;
@@ -302,7 +474,7 @@ p {
   border: none;
   padding: 10px;
   margin: 10px;
-  width: 210px;
+  width: 200px;
 }
 .middle-section {
   margin: 60px 0 55px 0;
@@ -322,6 +494,12 @@ p {
 }
 .middle-section .middle-images img {
   padding-left: 40px;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .middle-section .middle-images img {
+    margin-right: 6%;
+  }
 }
 .bottom-section {
   margin-top: 120px;
@@ -329,12 +507,29 @@ p {
   display: flex;
   background: url('/components/images/Rectangle-Image.jpg');
   background-repeat: no-repeat;
-  height: 446px;
-  background-size: 98vw;
+  height: 55vh;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    width: 98vw;
+    height: 1200px;
+    margin-bottom: 200px;
+  }
 }
 .bottom-section .left-phone {
   position: absolute;
-  margin-top: -125px;
+  z-index: 1;
+  margin-top: -7%;
+  width: 35vw;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .bottom-section .left-phone {
+    left: 1vw;
+    width: 95vw;
+    margin-top: -120px;
+  }
 }
 .bottom-section .call-to-action {
   display: flex;
@@ -345,20 +540,52 @@ p {
   width: 35%;
   margin-left: 33%;
 }
+@media (max-width: 500px) {
+  .bottom-section .call-to-action {
+    width: 80vw;
+    margin-left: 0;
+  }
+}
 .bottom-section .call-to-action h2 {
   color: white;
 }
+@media (max-width: 500px) {
+  .bottom-section .call-to-action h2 {
+    line-height: 30px;
+    font-size: 2.3rem;
+  }
+}
 .bottom-section .call-to-action .btn {
   background: #FFEC42;
-  padding: 18px 75px;
+  padding: 18px 76px;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 47px;
   border: none;
+}
+@media (max-width: 500px) {
+  .bottom-section .call-to-action .btn {
+    width: 50vw;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-section .call-to-action .btn {
+    margin-right: 8%;
+  }
 }
 .bottom-section .right-phone {
   position: absolute;
-  margin-left: 65vw;
-  margin-top: -125px;
+  right: 1vw;
+  margin-top: -7%;
+  z-index: 1;
+  width: 35vw;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .bottom-section .right-phone {
+    right: 7vw;
+    width: 95vw;
+    margin-top: 800px;
+  }
 }
 footer {
   margin-top: 10%;
@@ -367,12 +594,28 @@ footer {
   background: #202020;
   height: 150px;
 }
+@media (max-width: 500px) {
+  footer {
+    padding-top: 3%;
+  }
+}
 footer .footer-nav {
   margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer .footer-nav a {
   font-size: 1.4rem;
   padding: 0 5px;
+}
+@media (max-width: 500px) {
+  footer .footer-nav a {
+    padding-bottom: 3%;
+  }
 }
 footer h5 {
   font-size: 1.4rem;

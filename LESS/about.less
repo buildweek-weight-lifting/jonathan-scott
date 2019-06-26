@@ -1,5 +1,7 @@
 .about-blurb {
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    line-height: 35px;
     text-align: center;
     color: white;
 }
@@ -11,14 +13,39 @@
     align-items: center;
     margin: 2% auto;
 
+    @media @tablet {
+        width: 80vw;
+        justify-content: center;
+        
+    }
+
+    @media @tablet {
+        width: 98vw;
+    }
+
     .team-member {
         padding-bottom: 2%;
+
+        @media @tablet {
+            padding: 2%;
+        }
+
+        img {
+            @media @mobile {
+                width: 40vw;
+            }
+        }
     }
 }
 
 .button-bar {
     display: flex;
     justify-content: center;
+
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+
     .about-btn {
         .about-button-style();
     }

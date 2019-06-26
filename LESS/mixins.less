@@ -1,9 +1,14 @@
 .button-style {
     background: @yellow;
-    padding: 18px 75px;
+    padding: 18px 76px;
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 47px;
     border: none;
+
+    @media @mobile {
+        width: 50vw;
+    }
+
 }
 
 .about-button-style {
@@ -12,5 +17,11 @@
     border: none;
     padding: 10px;
     margin: 10px;
-    width: 210px;
+    width: 200px;
+}
+
+.hiddenMobile {
+    @media @mobile {
+        display: none;
+    }
 }

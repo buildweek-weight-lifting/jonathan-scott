@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="./CSS/index.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./components/javascript/about.js" async></script>
+    <script src="./components/javascript/nav.js" async></script>
     <title>About Us</title>
 </head>
 <body>
     <div class="about-container">
         <header>
             <div class="about-nav">
+                <div class="menu">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
                 <img class="hercules-logo" src="/components/images/hercules-logo.svg"></img>
+                <img class="hercules-gold-logo" src="/components/images/hercules_logo_gold.svg"></img>
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="#">About Hercules</a>
+                    <a href="about.html">About Hercules</a>
                     <a href="#">Sign In</a>
                     <a href="#">Sign Up</a>
                 </nav>
@@ -53,12 +61,12 @@
             </div>
         </div>
         <div class="button-bar">
-            <button class="about-btn">ALL</button>
-            <button class="about-btn">WEB UI DEVS</button>
-            <button class="about-btn"> FRONT-END ARCHITECTS</button>
-            <button class="about-btn">BACK-END ARCHITECTS</button>
-            <button class="about-btn">UI/UX DESIGNER</button>
-            <button class="about-btn">TEAM LEAD</button>
+            <button  data-btn="all" class="about-btn active-btn">ALL</button>
+            <button  data-btn="web-ui" class="about-btn">WEB UI DEVS</button>
+            <button  data-btn="front-end" class="about-btn"> FRONT-END ARCHITECTS</button>
+            <button  data-btn="back-end" class="about-btn">BACK-END ARCHITECTS</button>
+            <button  data-btn="ui-ux" class="about-btn">UI/UX DESIGNER</button>
+            <button  data-btn="team-lead" class="about-btn">TEAM LEAD</button>
         </div>
         <footer>
             <div class="footer-nav">
