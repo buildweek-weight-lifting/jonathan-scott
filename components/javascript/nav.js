@@ -1,2 +1,3 @@
-const navAnchors = Array.from(document.querySelectorAll('nav a'));
-navAnchors.map(el => el.addEventListener('mouseover', () => el.getElementsByClassName.color = "blue"))
+const navAnchors = document.querySelector('nav');
+navAnchors.addEventListener('mouseover', event => event.target.style.color = "#FFEC42");
+navAnchors.addEventListener('mouseout', event => event.target.style.color = "white");
