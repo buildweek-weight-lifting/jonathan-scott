@@ -2,8 +2,38 @@
     display: flex;
     justify-content: space-between;
 
+    .menu {
+        display: none;
+        margin: 2%;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            margin: 5px, 0 0 5px;
+        }
+
+        .menu-bar {
+            width: 30px;
+            height: 5px;
+            background-color:white;
+            margin: 4px 0;
+          }
+      }
+
     .hercules-logo {
         margin: 48px 0 0 85px;
+        
+        @media @mobile {
+            display: none;
+        }
+    }
+    .hercules-gold-logo {
+        display: none;
+        
+        @media @mobile {
+            display: inline;
+            margin: 2% 0 0 75%;
+        }
     }
 
     nav {
@@ -12,6 +42,8 @@
         a {
             text-decoration: none;
             padding-right: 60px;
+
+            .hiddenMobile()
         }
         a:last-of-type {
             padding-right: 35px;

@@ -237,6 +237,15 @@ p {
 }
 @media (max-width: 500px) {
   .index-header .nav-container .hercules-logo {
+    display: none;
+  }
+}
+.index-header .nav-container .hercules-gold-logo {
+  display: none;
+}
+@media (max-width: 500px) {
+  .index-header .nav-container .hercules-gold-logo {
+    display: inline;
     margin: 2% 0 0 75%;
   }
 }
@@ -299,6 +308,10 @@ p {
     width: 50vw;
   }
 }
+.index-header .intro-tagline .btn img {
+  background-position-y: 2px;
+  padding-top: 1px;
+}
 @media (max-width: 500px) {
   .index-header .intro-tagline .btn {
     margin-left: 0;
@@ -358,8 +371,39 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.about-nav .menu {
+  display: none;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .about-nav .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 5px, 0 0 5px;
+  }
+}
+.about-nav .menu .menu-bar {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0;
+}
 .about-nav .hercules-logo {
   margin: 48px 0 0 85px;
+}
+@media (max-width: 500px) {
+  .about-nav .hercules-logo {
+    display: none;
+  }
+}
+.about-nav .hercules-gold-logo {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-nav .hercules-gold-logo {
+    display: inline;
+    margin: 2% 0 0 75%;
+  }
 }
 .about-nav nav {
   margin-top: 50px;
@@ -368,11 +412,18 @@ p {
   text-decoration: none;
   padding-right: 60px;
 }
+@media (max-width: 500px) {
+  .about-nav nav a {
+    display: none;
+  }
+}
 .about-nav nav a:last-of-type {
   padding-right: 35px;
 }
 .about-blurb {
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  line-height: 35px;
   text-align: center;
   color: white;
 }
@@ -384,12 +435,38 @@ p {
   align-items: center;
   margin: 2% auto;
 }
+@media (max-width: 800px) {
+  .team-members {
+    width: 80vw;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .team-members {
+    width: 98vw;
+  }
+}
 .team-members .team-member {
   padding-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .team-members .team-member {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .team-members .team-member img {
+    width: 40vw;
+  }
 }
 .button-bar {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 800px) {
+  .button-bar {
+    flex-wrap: wrap;
+  }
 }
 .button-bar .about-btn {
   background: #3D3D3D;
@@ -435,8 +512,8 @@ p {
 }
 @media (max-width: 500px) {
   .bottom-section {
-    width: 100%;
-    height: 150vh;
+    width: 98vw;
+    height: 1200px;
     margin-bottom: 200px;
   }
 }
@@ -449,7 +526,7 @@ p {
 }
 @media (max-width: 500px) {
   .bottom-section .left-phone {
-    left: 10vw;
+    left: 1vw;
     width: 95vw;
     margin-top: -120px;
   }
@@ -465,7 +542,7 @@ p {
 }
 @media (max-width: 500px) {
   .bottom-section .call-to-action {
-    width: 95vw;
+    width: 80vw;
     margin-left: 0;
   }
 }
@@ -475,7 +552,7 @@ p {
 @media (max-width: 500px) {
   .bottom-section .call-to-action h2 {
     line-height: 30px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 .bottom-section .call-to-action .btn {
@@ -490,6 +567,11 @@ p {
     width: 50vw;
   }
 }
+@media (max-width: 500px) {
+  .bottom-section .call-to-action .btn {
+    margin-right: 8%;
+  }
+}
 .bottom-section .right-phone {
   position: absolute;
   right: 1vw;
@@ -500,9 +582,9 @@ p {
 }
 @media (max-width: 500px) {
   .bottom-section .right-phone {
-    right: 10vw;
+    right: 7vw;
     width: 95vw;
-    margin-top: 700px;
+    margin-top: 800px;
   }
 }
 footer {
