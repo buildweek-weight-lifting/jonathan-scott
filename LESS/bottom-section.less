@@ -7,11 +7,14 @@
     background-repeat:  no-repeat;
     height: 55vh;
     background-size: cover;
+
+    @media @tablet {
+        height: 40vh;
+    }
     
     @media @mobile {
-        // background-size: 1000px;
         width: 98vw;
-        height: 1200px;
+        height: 1100px;
         margin-bottom: 200px;
     }
 
@@ -21,6 +24,10 @@
         margin-top: -7%;
         width: 35vw;
         height: auto;
+
+        @media @tablet {
+            width: 45vw;
+        }
 
         @media @mobile {
             left: 1vw;
@@ -40,10 +47,14 @@
 
         @media @mobile {
             width: 80vw;
-            margin-left: 0;
+            margin-left: 7vw;
         }
         h2 {
             color: white;
+
+            @media @tablet {
+                font-size: 2.8rem;
+            }
 
             @media @mobile {
                 line-height: 30px;
@@ -52,6 +63,10 @@
         }
         .btn {
             .button-style();
+
+            @media @tablet {
+                margin-right: 15%;
+            }
 
             @media @mobile {
                 margin-right: 8%;
@@ -66,10 +81,14 @@
         width: 35vw;
         height: auto;
 
+        @media @tablet {
+            width: 45vw;
+        }
+
         @media @mobile {
             right: 7vw;
             width: 95vw;
-            margin-top: 800px;
+            margin-top: 690px;
         }
     
     }

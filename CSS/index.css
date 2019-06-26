@@ -231,7 +231,7 @@ p {
 .index-header .nav-container .menu-icon .menu-bar {
   width: 30px;
   height: 5px;
-  background-color: white;
+  background: white;
   margin: 4px 0;
 }
 .index-header .nav-container .hercules-logo {
@@ -248,6 +248,7 @@ p {
 @media (max-width: 500px) {
   .index-header .nav-container .hercules-gold-logo {
     display: flex;
+    margin-right: 2%;
     order: 2;
     z-index: 1;
   }
@@ -257,7 +258,9 @@ p {
 }
 @media (max-width: 500px) {
   .index-header .nav-container .mobile-menu {
-    background-color: #202020;
+    padding-top: 15px;
+    background-color: #3D3D3D;
+    border-bottom: 1px solid #FFEC42;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -268,13 +271,8 @@ p {
   .index-header .nav-container .mobile-menu a {
     text-align: center;
     font-size: 2.5rem;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     color: #FFEC42;
-  }
-}
-@media (max-width: 500px) {
-  .index-header .nav-container .mobile-menu a a:first-child {
-    margin-top: 5px;
   }
 }
 .index-header .nav-container nav {
@@ -294,11 +292,11 @@ p {
 }
 .index-header .nav-container .display-menu {
   transition: all 0.5s ease;
-  height: 180px;
+  height: 190px;
   width: 100%;
 }
 .index-header .nav-container .hide-menu {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   height: 0;
   width: 0;
   overflow: hidden;
@@ -429,7 +427,7 @@ p {
 .about-nav .menu-icon .menu-bar {
   width: 30px;
   height: 5px;
-  background-color: white;
+  background: white;
   margin: 4px 0;
 }
 .about-nav .hercules-logo {
@@ -446,6 +444,7 @@ p {
 @media (max-width: 500px) {
   .about-nav .hercules-gold-logo {
     display: flex;
+    margin-right: 2%;
     order: 2;
     z-index: 1;
   }
@@ -455,7 +454,9 @@ p {
 }
 @media (max-width: 500px) {
   .about-nav .mobile-menu {
-    background-color: #202020;
+    padding-top: 15px;
+    background-color: #3D3D3D;
+    border-bottom: 1px solid #FFEC42;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -466,7 +467,7 @@ p {
   .about-nav .mobile-menu a {
     text-align: center;
     font-size: 2.5rem;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     color: #FFEC42;
   }
 }
@@ -492,11 +493,11 @@ p {
 }
 .about-nav .display-menu {
   transition: all 0.5s ease;
-  height: 180px;
+  height: 190px;
   width: 100%;
 }
 .about-nav .hide-menu {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   height: 0;
   width: 0;
   overflow: hidden;
@@ -514,6 +515,7 @@ p {
 @media (max-width: 500px) {
   .about-blurb {
     margin-left: 3%;
+    margin-top: 15%;
     width: 90vw;
   }
 }
@@ -566,6 +568,10 @@ p {
   margin: 10px;
   width: 200px;
 }
+.button-bar .active-btn {
+  background: #FFEC42;
+  color: black;
+}
 .middle-section {
   margin: 60px 0 55px 0;
 }
@@ -586,8 +592,15 @@ p {
   padding-left: 40px;
   margin-bottom: 5%;
 }
+@media (max-width: 800px) {
+  .middle-section .middle-images img {
+    width: 27%;
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 500px) {
   .middle-section .middle-images img {
+    width: 100%;
     margin-right: 6%;
   }
 }
@@ -600,10 +613,15 @@ p {
   height: 55vh;
   background-size: cover;
 }
+@media (max-width: 800px) {
+  .bottom-section {
+    height: 40vh;
+  }
+}
 @media (max-width: 500px) {
   .bottom-section {
     width: 98vw;
-    height: 1200px;
+    height: 1100px;
     margin-bottom: 200px;
   }
 }
@@ -613,6 +631,11 @@ p {
   margin-top: -7%;
   width: 35vw;
   height: auto;
+}
+@media (max-width: 800px) {
+  .bottom-section .left-phone {
+    width: 45vw;
+  }
 }
 @media (max-width: 500px) {
   .bottom-section .left-phone {
@@ -633,11 +656,16 @@ p {
 @media (max-width: 500px) {
   .bottom-section .call-to-action {
     width: 80vw;
-    margin-left: 0;
+    margin-left: 7vw;
   }
 }
 .bottom-section .call-to-action h2 {
   color: white;
+}
+@media (max-width: 800px) {
+  .bottom-section .call-to-action h2 {
+    font-size: 2.8rem;
+  }
 }
 @media (max-width: 500px) {
   .bottom-section .call-to-action h2 {
@@ -657,6 +685,11 @@ p {
     width: 50vw;
   }
 }
+@media (max-width: 800px) {
+  .bottom-section .call-to-action .btn {
+    margin-right: 15%;
+  }
+}
 @media (max-width: 500px) {
   .bottom-section .call-to-action .btn {
     margin-right: 8%;
@@ -670,11 +703,16 @@ p {
   width: 35vw;
   height: auto;
 }
+@media (max-width: 800px) {
+  .bottom-section .right-phone {
+    width: 45vw;
+  }
+}
 @media (max-width: 500px) {
   .bottom-section .right-phone {
     right: 7vw;
     width: 95vw;
-    margin-top: 800px;
+    margin-top: 690px;
   }
 }
 footer {

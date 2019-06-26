@@ -6,8 +6,8 @@ class Menu {
         this.menuIcon.addEventListener('click', () => this.menuSelect());
     }
     menuSelect() {
-        this.element.classList.toggle('display-menu')
-        this.element.classList.toggle('hide-menu')
+        this.element.classList.toggle('display-menu');
+        this.element.classList.toggle('hide-menu');
     }
 }
 const menu = document.querySelector('.mobile-menu')

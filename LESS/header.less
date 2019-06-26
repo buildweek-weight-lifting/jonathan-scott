@@ -32,7 +32,7 @@
             .menu-bar {
                 width: 30px;
                 height: 5px;
-                background-color:white;
+                background:white;
                 margin: 4px 0;
               }
           }
@@ -49,6 +49,7 @@
 
             @media @mobile {
                 display: flex;
+                margin-right: 2%;
                 order: 2;
                 z-index: 1;
             }
@@ -58,7 +59,9 @@
             display: none;
 
             @media @mobile {
-                background-color: @dark-grey;
+                padding-top: 15px;
+                background-color: @medium-grey;
+                border-bottom: 1px solid @yellow;
                 position: absolute;
                 display: flex;
                 flex-direction: column;
@@ -69,14 +72,9 @@
                 @media @mobile {
                     text-align: center;
                     font-size: 2.5rem;
-                    padding-bottom: 3%;
+                    padding-bottom: 5%;
                     color: @yellow;
                 }
-            a:first-child {
-                @media @mobile {
-                    margin-top: 5px;
-                }
-            }
             }
         }
         nav {
@@ -94,12 +92,12 @@
         }
         .display-menu {
             transition: all 0.5s ease;
-            height: 180px;
+            height: 190px;
             width: 100%;
             
         }
         .hide-menu {
-            transition: all 0.2s ease;
+            transition: all 0.3s ease;
             height: 0;
             width: 0;
             overflow: hidden;
