@@ -601,6 +601,7 @@ p {
 @media (max-width: 500px) {
   .middle-section .middle-images img {
     width: 100%;
+    margin-bottom: 5%;
     margin-right: 6%;
   }
 }
@@ -608,7 +609,7 @@ p {
   margin-top: 120px;
   margin-bottom: 50px;
   display: flex;
-  background: url(/components/images/Rectangle-Image.jpg);
+  background: url('/components/images/Rectangle-Image.jpg');
   background-repeat: no-repeat;
   height: 55vh;
   background-size: cover;
@@ -712,7 +713,7 @@ p {
   .bottom-section .right-phone {
     right: 7vw;
     width: 95vw;
-    margin-top: 690px;
+    margin-top: 670px;
   }
 }
 footer {
