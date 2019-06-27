@@ -35,11 +35,25 @@ class Button {
 class Team {
     constructor(elem) {
         this.elem = elem;
+        this.img = this.elem.querySelector('img')
+        this.name = this.img.alt;
+        this.teamInfo = elem.querySelector('.team-info')
+
+        this.elem.addEventListener('mouseover', () => this.hoverName())
+        this.elem.addEventListener('mouseout', () => this.hoverOff())
     }
 
     selectTeam() {
         // changes newly selected list from display none to flex
         this.elem.style.display = 'flex';
+    }
+
+    hoverName() {
+        this.teamInfo.style.display = 'flex';
+       this.teamInfo.textContent = `${this.name}`;
+    }
+    hoverOff() {
+        this.teamInfo.style.display = 'none';
     }
         
 }
