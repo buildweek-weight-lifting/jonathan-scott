@@ -52,6 +52,7 @@ class Team {
         this.teamInfo.style.display = 'flex';
        this.teamInfo.textContent = `${this.name}`;
     }
+    
     hoverOff() {
         this.teamInfo.style.display = 'none';
     }
