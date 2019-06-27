@@ -8,7 +8,6 @@ scrollArrow.addEventListener('click', () => {
 })
 
 const imageLink = Array.from(document.querySelectorAll('.middle-images img'));
-console.log(imageLink);
 imageLink.map(el => el.addEventListener('click', () => {
     window.open("https://condescending-bose-8d9fc6.netlify.com/", "_self");
 }));
