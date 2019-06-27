@@ -1,3 +1,4 @@
+// Hero image background
 .index-header {
     max-width: 98vw;
     background-image:
@@ -13,6 +14,8 @@
         background-image: url(../components/images/hero-image.jpg);
         background-position-x: -419px;
     }
+
+    // Nav bar
     .nav-container {
         display: flex;
         justify-content: space-between;
@@ -54,7 +57,8 @@
                 z-index: 1;
             }
         }
-
+        
+        // hidden mobile menu
         .mobile-menu {
             display: none;
 
@@ -109,6 +113,7 @@
         }
     }  
 
+    // Company title and tagline
     .intro-tagline {
         margin-bottom: 100px;
 
@@ -151,9 +156,11 @@
         }
     }
     
+    // the 3 info boxes at the bottom of the hero image
     .info-boxes {
         height: 193px;
         display: flex;
+
         .chevron-img {
             padding: @info-padding;
             width: 40%;
@@ -164,6 +171,10 @@
                 margin-left: 20%;
             }
 
+            img {
+                transition: transform .3s ease;
+            }
+
         }
 
         .small-quote {
@@ -172,6 +183,10 @@
             width: 24%;
 
             .hiddenMobile();
+
+            h4 {
+                margin-bottom: 3%;
+            }
         }
 
         .workout-tracking {
@@ -181,6 +196,19 @@
             color: white;
 
             .hiddenMobile();
+
+            h4 {
+                margin-bottom: 3%;
+            }
+            
+            p {
+                margin-bottom: 3%;
+            }
+            
+            a {
+                margin-left: 50%;
+                font-size: 1.5rem;
+            }
 
         }
 

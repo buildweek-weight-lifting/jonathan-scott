@@ -362,7 +362,7 @@ p {
   display: flex;
 }
 .index-header .info-boxes .chevron-img {
-  padding: 70px 50px 50px 50px;
+  padding: 70px 50px 0 70px;
   width: 40%;
   text-align: center;
   margin-left: 2.5%;
@@ -372,9 +372,12 @@ p {
     margin-left: 20%;
   }
 }
+.index-header .info-boxes .chevron-img img {
+  transition: transform 0.3s ease;
+}
 .index-header .info-boxes .small-quote {
   background: white;
-  padding: 70px 50px 50px 50px;
+  padding: 70px 50px 0 70px;
   width: 24%;
 }
 @media (max-width: 500px) {
@@ -382,9 +385,12 @@ p {
     display: none;
   }
 }
+.index-header .info-boxes .small-quote h4 {
+  margin-bottom: 3%;
+}
 .index-header .info-boxes .workout-tracking {
   background-image: url(../components/images/sub-hero-image.jpg);
-  padding: 70px 50px 50px 50px;
+  padding: 70px 50px 0 70px;
   width: 24%;
   color: white;
 }
@@ -392,6 +398,16 @@ p {
   .index-header .info-boxes .workout-tracking {
     display: none;
   }
+}
+.index-header .info-boxes .workout-tracking h4 {
+  margin-bottom: 3%;
+}
+.index-header .info-boxes .workout-tracking p {
+  margin-bottom: 3%;
+}
+.index-header .info-boxes .workout-tracking a {
+  margin-left: 50%;
+  font-size: 1.5rem;
 }
 .index-header .info-boxes .meet-us {
   text-align: center;
@@ -587,6 +603,9 @@ p {
   background: #FFEC42;
   color: black;
 }
+.button-bar .active-btn:focus {
+  outline: none;
+}
 .middle-section {
   margin: 60px 0 55px 0;
 }
@@ -606,6 +625,7 @@ p {
 .middle-section .middle-images img {
   padding-left: 40px;
   margin-bottom: 5%;
+  transition: transform 0.5s ease;
 }
 @media (max-width: 800px) {
   .middle-section .middle-images img {
