@@ -556,15 +556,23 @@ p {
 }
 .team-members .team-member {
   padding-bottom: 2%;
+  transition: all 0.3s ease;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   .team-members .team-member {
     padding: 2%;
   }
 }
+.team-members .team-member img {
+  transition: all 1s ease;
+  height: 224px;
+  width: 263px;
+}
 @media (max-width: 500px) {
   .team-members .team-member img {
     width: 40vw;
+    height: auto;
   }
 }
 .team-members .team-info {
@@ -581,6 +589,18 @@ p {
     font-size: 2rem;
     margin: 140px 0 0 40px;
   }
+}
+.team-members .hidden-team {
+  position: absolute;
+}
+.team-members .hidden-team img {
+  transition: all 1s ease;
+  width: 0;
+  height: 0;
+}
+.team-members .hide {
+  display: none;
+  opacity: 0;
 }
 .button-bar {
   display: flex;
