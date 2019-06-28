@@ -13,26 +13,33 @@
 }
 
 .team-members {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: 2% auto;
 
-    @media @tablet {
-        width: 80vw;
-        justify-content: center;
-        
+    @media (max-width: 1850px) {
+        width: 70vw;
     }
-
-    @media @mobile {
-
+    @media (max-width: 1600px) {
+        width: 80vw;
+    }
+    @media (max-width: 1440px) {
+        width: 85vw;
+    }
+    @media (max-width: 1250px) {
         width: 95vw;
     }
 
+    @media @tablet {
+        justify-content: center;
+   
+    }
+
     .team-member {
-        padding-bottom: 2%;
+        padding-bottom: 20px;
         transition: all 0.3s ease;
         justify-content: center;
 
@@ -44,6 +51,7 @@
             transition: all 1s ease;
             height: 224px;
             width: 263px;
+            
             @media @mobile {
                 width: 40vw;
                 height: auto;
