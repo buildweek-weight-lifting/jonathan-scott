@@ -6,7 +6,7 @@ class Button {
         this.role = this.elem.dataset.btn;
 
         // checks to see if 'all' button is pressed. If not it returns the appropriate list of cards
-        if(this.role === 'all') {
+        if (this.role === 'all') {
             this.members = document.querySelectorAll('.team-member');
         } else {
             this.members = document.querySelectorAll(`.team-member[data-img="${this.role}"]`);
@@ -25,17 +25,11 @@ class Button {
         const team = document.querySelectorAll('.team-member');
         team.forEach(el => el.classList.add('hidden-team'));
         team.forEach(el => el.classList.remove('team-member'));
-        
-        // setTimeout(()=> {team.forEach(el => el.classList.add('hide'))}, 2000)
-        // this.elem.classList.remove('hide')
-        this.elem.classList.add('active-btn')
-        
 
-        //iterates over the list of dom elements and removes the 'hidden-team' class using a method from the Team class
+        this.elem.classList.add('active-btn')
+
         this.members.forEach(el => el.selectTeam());
-        // if (this.elem.classList.includes('hidden-team')) {
-        //     this.elem.style.display = 'none';
-        // }
+
     }
 }
 
@@ -58,13 +52,13 @@ class Card {
 
     hoverName() {
         this.teamInfo.style.display = 'flex';
-       this.teamInfo.textContent = `${this.name}`;
+        this.teamInfo.textContent = `${this.name}`;
     }
-    
+
     hoverOff() {
         this.teamInfo.style.display = 'none';
     }
-        
+
 }
 
 

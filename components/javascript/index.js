@@ -21,3 +21,13 @@ imageLink.map(el => el.addEventListener('mouseover', () => {
 imageLink.map(el => el.addEventListener('mouseout', () => {
     el.style.transform = 'scale(1)';
 }));
+
+// button mouseover effects
+const indexButton = Array.from(document.querySelectorAll('.btn'))
+indexButton.map(el => el.addEventListener('mouseover', () => {
+    el.style.transform = 'scale(1.1)';
+}));
+indexButton.map(el => el.addEventListener('mouseout', () => {
+    el.style.transform = 'scale(1)';
+}));
+

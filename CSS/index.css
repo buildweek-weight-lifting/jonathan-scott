@@ -380,6 +380,11 @@ p {
   padding: 70px 50px 0 70px;
   width: 24%;
 }
+@media (max-width: 800px) {
+  .index-header .info-boxes .small-quote {
+    padding: 30px 15px 0 15px;
+  }
+}
 @media (max-width: 500px) {
   .index-header .info-boxes .small-quote {
     display: none;
@@ -388,11 +393,21 @@ p {
 .index-header .info-boxes .small-quote h4 {
   margin-bottom: 3%;
 }
+@media (max-width: 800px) {
+  .index-header .info-boxes .small-quote h4 {
+    font-size: 1.5rem;
+  }
+}
 .index-header .info-boxes .workout-tracking {
   background-image: url(../components/images/sub-hero-image.jpg);
   padding: 70px 50px 0 70px;
   width: 24%;
   color: white;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking {
+    padding: 30px 15px 0 15px;
+  }
 }
 @media (max-width: 500px) {
   .index-header .info-boxes .workout-tracking {
@@ -402,12 +417,29 @@ p {
 .index-header .info-boxes .workout-tracking h4 {
   margin-bottom: 3%;
 }
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking h4 {
+    font-size: 1.5rem;
+  }
+}
 .index-header .info-boxes .workout-tracking p {
   margin-bottom: 3%;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking p {
+    font-size: 1.3rem;
+    margin-bottom: 40%;
+  }
 }
 .index-header .info-boxes .workout-tracking a {
   margin-left: 50%;
   font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking a {
+    margin-left: 0%;
+    font-size: 1.3rem;
+  }
 }
 .index-header .info-boxes .meet-us {
   text-align: center;
@@ -646,6 +678,7 @@ p {
   padding-left: 40px;
   margin-bottom: 5%;
   transition: transform 0.5s ease;
+  cursor: pointer;
 }
 @media (max-width: 800px) {
   .middle-section .middle-images img {
@@ -744,6 +777,7 @@ p {
 @media (max-width: 800px) {
   .bottom-section .call-to-action .btn {
     margin-right: 15%;
+    width: 240px;
   }
 }
 @media (max-width: 500px) {

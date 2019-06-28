@@ -182,10 +182,18 @@
             padding: @info-padding;
             width: 24%;
 
+            @media @tablet {
+                padding: 30px 15px 0 15px;
+            }
+
             .hiddenMobile();
 
             h4 {
                 margin-bottom: 3%;
+
+                @media @tablet {
+                    font-size: 1.5rem;
+                }
             }
         }
 
@@ -195,19 +203,37 @@
             width: 24%;
             color: white;
 
+            @media @tablet {
+                padding: 30px 15px 0 15px;
+            }
+
             .hiddenMobile();
 
             h4 {
                 margin-bottom: 3%;
+
+                @media @tablet {
+                    font-size: 1.5rem;
+                }
             }
             
             p {
                 margin-bottom: 3%;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    margin-bottom: 40%;
+                }
             }
             
             a {
                 margin-left: 50%;
                 font-size: 1.5rem;
+
+                @media @tablet {
+                    margin-left: 0%;
+                    font-size: 1.3rem;
+                }
             }
 
         }
