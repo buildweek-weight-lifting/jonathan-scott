@@ -362,7 +362,7 @@ p {
   display: flex;
 }
 .index-header .info-boxes .chevron-img {
-  padding: 70px 50px 50px 50px;
+  padding: 70px 50px 0 70px;
   width: 40%;
   text-align: center;
   margin-left: 2.5%;
@@ -372,25 +372,73 @@ p {
     margin-left: 20%;
   }
 }
+.index-header .info-boxes .chevron-img img {
+  transition: transform 0.3s ease;
+}
 .index-header .info-boxes .small-quote {
   background: white;
-  padding: 70px 50px 50px 50px;
+  padding: 70px 50px 0 70px;
   width: 24%;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .small-quote {
+    padding: 30px 15px 0 15px;
+  }
 }
 @media (max-width: 500px) {
   .index-header .info-boxes .small-quote {
     display: none;
   }
 }
+.index-header .info-boxes .small-quote h4 {
+  margin-bottom: 3%;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .small-quote h4 {
+    font-size: 1.5rem;
+  }
+}
 .index-header .info-boxes .workout-tracking {
   background-image: url(../components/images/sub-hero-image.jpg);
-  padding: 70px 50px 50px 50px;
+  padding: 70px 50px 0 70px;
   width: 24%;
   color: white;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking {
+    padding: 30px 15px 0 15px;
+  }
 }
 @media (max-width: 500px) {
   .index-header .info-boxes .workout-tracking {
     display: none;
+  }
+}
+.index-header .info-boxes .workout-tracking h4 {
+  margin-bottom: 3%;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking h4 {
+    font-size: 1.5rem;
+  }
+}
+.index-header .info-boxes .workout-tracking p {
+  margin-bottom: 3%;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking p {
+    font-size: 1.3rem;
+    margin-bottom: 40%;
+  }
+}
+.index-header .info-boxes .workout-tracking a {
+  margin-left: 50%;
+  font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .index-header .info-boxes .workout-tracking a {
+    margin-left: 0%;
+    font-size: 1.3rem;
   }
 }
 .index-header .info-boxes .meet-us {
@@ -540,15 +588,23 @@ p {
 }
 .team-members .team-member {
   padding-bottom: 2%;
+  transition: all 0.3s ease;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   .team-members .team-member {
     padding: 2%;
   }
 }
+.team-members .team-member img {
+  transition: all 1s ease;
+  height: 224px;
+  width: 263px;
+}
 @media (max-width: 500px) {
   .team-members .team-member img {
     width: 40vw;
+    height: auto;
   }
 }
 .team-members .team-info {
@@ -565,6 +621,18 @@ p {
     font-size: 2rem;
     margin: 140px 0 0 40px;
   }
+}
+.team-members .hidden-team {
+  position: absolute;
+}
+.team-members .hidden-team img {
+  transition: all 1s ease;
+  width: 0;
+  height: 0;
+}
+.team-members .hide {
+  display: none;
+  opacity: 0;
 }
 .button-bar {
   display: flex;
@@ -587,6 +655,9 @@ p {
   background: #FFEC42;
   color: black;
 }
+.button-bar .active-btn:focus {
+  outline: none;
+}
 .middle-section {
   margin: 60px 0 55px 0;
 }
@@ -606,6 +677,8 @@ p {
 .middle-section .middle-images img {
   padding-left: 40px;
   margin-bottom: 5%;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 @media (max-width: 800px) {
   .middle-section .middle-images img {
@@ -704,6 +777,7 @@ p {
 @media (max-width: 800px) {
   .bottom-section .call-to-action .btn {
     margin-right: 15%;
+    width: 240px;
   }
 }
 @media (max-width: 500px) {

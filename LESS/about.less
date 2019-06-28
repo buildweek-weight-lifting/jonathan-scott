@@ -11,6 +11,7 @@
         width: 90vw;
     }
 }
+
 .team-members {
     width: 60%;
     display: flex;
@@ -32,14 +33,20 @@
 
     .team-member {
         padding-bottom: 2%;
+        transition: all 0.3s ease;
+        justify-content: center;
 
         @media @tablet {
             padding: 2%;
         }
 
         img {
+            transition: all 1s ease;
+            height: 224px;
+            width: 263px;
             @media @mobile {
                 width: 40vw;
+                height: auto;
             }
         }
     }
@@ -58,6 +65,20 @@
             margin: 140px 0 0 40px;
         }
     }
+    .hidden-team {
+        position: absolute;
+
+        img {
+        transition: all 1s ease;
+        width: 0;
+        height: 0;
+       
+        }
+    }
+    .hide {
+        display:none;
+        opacity: 0;
+    }
 }
 
 .button-bar {
@@ -75,5 +96,9 @@
     .active-btn {
         background: @yellow;
         color: black;
+
+        &:focus {
+            outline: none;
+          }
     }
 }
